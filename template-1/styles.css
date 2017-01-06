@@ -10,11 +10,6 @@ body {
 	font-size: 16px;
 }
 
-h1 {
-	font-family: 'Arima Madurai', cursive;
-	font-size: 4rem;
-	color: #FFFFFF;
-}
 
 .container {
 	display:	flex;
@@ -48,7 +43,7 @@ h1 {
 }
 
 .nav-links-right {
-	padding-right: 2%;
+	padding-right: 5%;
 }
 
 .nav-links-right > a {
@@ -58,7 +53,7 @@ h1 {
 .brand {
 	font-family: 'Arima Madurai', cursive;
 	font-size: 2rem;
-	padding-left: 2%;
+	padding-left: 5%;
 }
 
 .hero {
@@ -68,8 +63,15 @@ h1 {
 	background-attachment: fixed;
 	background-size: cover;
 	flex: 1;
-	/*display: flex;
-	align-items: center;*/
+	display: flex;
+	align-items: center;
+}
+
+.hero h1 {
+	font-family: 'Arima Madurai', cursive;
+	font-size: 8rem;
+	color: #FFFFFF;
+	padding-left: 5%;
 }
 
 .features {
@@ -93,5 +95,3 @@ h1 {
 	color: #E0D1CA;
 	background-color: #385A75;
 }
-
-
