@@ -48,26 +48,20 @@ h1, h3, .brand {
 .nav-link {
 	text-decoration: none;
 	color: #FFFFFF;
+	transition: color 0.5s ease;
 }
 
 .nav-link:hover {
-	
-}
-
-.nav-links {
-	/*padding-right: 5%;*/
+	color: #077785;
 }
 
 .nav-links > a {
-	/*padding-right: 30px;*/
+	padding-right: 30px;
 }
 
 .brand {
-	/*font-family: 'Kumar One', cursive;*/
-	font-size: 1.5rem;
-	/*padding-left: 5%;*/
+	font-size: 2rem;
 }
-
 
 .hero {
 	flex: 1;
@@ -85,23 +79,26 @@ h1, h3, .brand {
 
 .full-section {
 	width: 100%;
-	/*border: 10px solid blue;*/
 }
 
 .section-1 {
 	width: 50%;
-	/*border: 10px solid red;*/
 }
 
 .section-2 {
 	width: 25%;
-	/*border: 10px solid green;*/
 }
 
 .section-row {
 	display: flex;
-	flex-direction: row;
-	/*flex-wrap: wrap;*/
+}
+
+.row-1 {
+ flex-direction: row;
+}
+
+.row-2 {
+	flex-direction: row-reverse;
 }
 
 .section-content {
