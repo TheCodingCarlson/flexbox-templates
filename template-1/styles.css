@@ -10,9 +10,8 @@ body {
 	font-size: 16px;
 }
 
-
 .container {
-	display:	flex;
+	display: flex;
   flex-direction: column;
   min-height:	100vh;
 }
@@ -30,7 +29,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	background-color: #385A75;
-	height: 8vh;
+	flex-basis: 8vh;
 }
 
 .nav-link {
@@ -60,30 +59,23 @@ body {
 	background-image: url('/img/mountains.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
-	flex: 1;
-	display: flex;
-	align-items: center;
-}
-
-.hero h1 {
-	font-family: 'Arima Madurai', cursive;
-	font-size: 8rem;
-	color: #FFFFFF;
-	padding-left: 5%;
+	flex: 5 10 300px;
 }
 
 .features {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	flex: 1;
 }
 
 .feature {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	justify-content: space-around;
-	padding: 5%;
+	padding: 0 5%;
+	/*flex: 1;*/
 }
 
 .feature-1 {
@@ -94,4 +86,13 @@ body {
 .feature-2 {
 	color: #E0D1CA;
 	background-color: #385A75;
+}
+
+@media all and (max-width:1000px) {
+	.half-section {
+		width: 100%;
+	}
+	.nav-links-right {
+		padding-right: 0;
+	}
 }

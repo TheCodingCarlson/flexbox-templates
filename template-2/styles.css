@@ -5,13 +5,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Box-sizing border-box */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*font-family: 'Knewave', cursive;
-font-family: 'Oswald', sans-serif;*/
-
 body {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
 	color: #077785;
+	background-color: #669EF3;
 }
 
 h1, h3, .brand {
@@ -29,9 +27,9 @@ h1, h3, .brand {
 .container {
 	display:	flex;
   flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
   min-height:	100vh;
-  background-color: #669EF3;
-  min-height: 100vh;
 }
 
 .section {
@@ -91,6 +89,7 @@ h1, h3, .brand {
 
 .section-row {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .row-1 {
@@ -117,3 +116,11 @@ h1, h3, .brand {
 	color: #077785;
 }
 
+@media all and (max-width:1000px) {
+	.section-1, .section-2 {
+		width: 100%;
+	}
+	.navbar {
+		padding: 15px; 
+	}
+}
